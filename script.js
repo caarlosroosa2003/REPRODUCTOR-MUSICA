@@ -20,6 +20,36 @@ let isPlaying = false;
 let isRandom = false;
 let updateTimer;
 
+document.getElementById('song1').addEventListener('click', function() {
+    loadTrack(0);
+    playTrack();
+});
+
+document.getElementById('song2').addEventListener('click', function() {
+    loadTrack(1);
+    playTrack();
+});
+
+document.getElementById('song3').addEventListener('click', function() {
+    loadTrack(2);
+    playTrack();
+});
+
+document.getElementById('song4').addEventListener('click', function() {
+    loadTrack(3);
+    playTrack();
+});
+
+document.getElementById('song5').addEventListener('click', function() {
+    loadTrack(4);
+    playTrack();
+});
+
+document.getElementById('song6').addEventListener('click', function() {
+    loadTrack(5);
+    playTrack();
+});
+
 const music_list = [
     {
         img : 'img/Sefa.jpg',
@@ -50,6 +80,12 @@ const music_list = [
         name : 'Dice',
         artist : 'RVFV ft Chiche Nieto, Mc Buzz',
         music : 'musica/DiceRvfv.mp3'
+    },
+    {
+        img : 'img/oa.jpeg',
+        name : 'OA',
+        artist : 'Anuel AA ft Quevedo, Maluma, DJ Luian',
+        music : 'musica/OA - Anuel AA.mp3'
     }
 ];
 

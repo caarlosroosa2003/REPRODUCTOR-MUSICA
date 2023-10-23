@@ -3,17 +3,16 @@ body {
     /*background: linear-gradient(to right,#197b17, #15be61);*/
     font-weight: bold;
     background-image: url(https://static.vecteezy.com/system/resources/previews/004/979/193/non_2x/hexagon-abstract-green-neon-background-free-vector.jpg);
-    background-size: cover;
+    background-size: contain;
     backdrop-filter: blur(3px);
     margin: 0;
-    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     }
     
     .player{
-      height: 95vh;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -240,3 +239,36 @@ body {
     .stroke:nth-child(7){
         animation-delay: 0s;
     }
+
+  .song-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 50px 0;
+      text-align: center;
+      font-size: 1.2rem;
+  }
+  
+  .song-list li {
+      padding: 10px;
+      margin: 10px;
+      background-color:  #dddddd;
+      box-shadow: #346e27b7 0px 9px 38px /* #5dc346c3 0px 15px 12px*/;
+      opacity: 97%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .song-list li:hover {
+      background-color: #e4fdd9;
+      transform: scale(1.1);
+  }
+  
+  .song-list li:active {
+      transform: scale(0.9);
+  }
+  .lista-canciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
